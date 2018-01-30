@@ -1,4 +1,5 @@
-let x = 9;
-let y = 12;
+// check types of a and b and print out in console same type if they are same type
+let a = 9;
+let b = 12;
 
-if(typeof x == typeof y) { console.log('SAME TYPE'); }
+if(typeof a === typeof b) { console.log('SAME TYPE'); }
