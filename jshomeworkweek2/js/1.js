@@ -6,12 +6,21 @@ function addNumbers(a,b,c){
 	let d = a+b+c;
 	return d;
 }
-console.log(addNumbers(2,4,6));
+console.log(addNumbers(2,4,6)); //output 12
 
+/* ---- another way shorter-----
 
-//another way without return
-//function sumNumbers(a, b, c) {
-	//let sum = a + b + c;
- 	//console.log(sum);
-//}
-//sumNumbers(2, 4, 6);
+function adNumb(a, b, c) {
+	return a + b + c;
+}
+console.log(adNumb(2,4,6)); //output 12
+
+----- another way without return -----
+
+   function sumNumbers(a, b, c) {
+	 let sum = a + b + c;
+ 	 console.log(sum);
+}
+	sumNumbers(2, 4, 6);   */
+
+	//output 12

@@ -3,11 +3,25 @@ vehicle("blue", 1, 2) prints "a blue used car".
 vehicle("blue", 1, 1) prints "a blue new car". */
 
 
-function vehicle(color, age, type,) {
- console.log(" a " +   color   +  age  +  type);
+function vehicle(color, age, type) {
+	const arAges = {
+			"1": "new",
+			"2": "used"
+		},
+
+	      arTypes = {
+			"1": "car",
+			"2": "motorbike"
+		};
+  
+	return "a " + color  + " " + arAges[age]  + " " + arTypes[type];
 }
- 
-vehicle(" blue " , " used " , " car ");
-vehicle(" blue " , " new " , " car ");
-vehicle(" blue " , " used " , " motorbike ");
-vehicle(" blue " , " new " , " motorbike ");
+console.log(vehicle(" blue ", 1, 1));
+
+
+	vehicle(" blue " , 1 , 1);
+	vehicle(" blue " , 1 , 2);
+	vehicle(" blue " , 2 , 1);
+	vehicle(" blue " , 2 , 2);
+
+	//output "a blue new car"
