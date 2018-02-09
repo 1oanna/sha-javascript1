@@ -5,4 +5,4 @@ if (3 == 3) {
     console.log("false")
 }*/
 
-console.log(3==3);
+console.log(3===3);

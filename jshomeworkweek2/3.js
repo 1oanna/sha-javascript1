@@ -15,7 +15,7 @@ function vehicleType( color, type ) {
 }
 console.log(vehicleType("blue", 2));
             
-vehicleType(" blue " , 1);
+
 vehicleType(" blue " , 2);
 // output "a  blue  motorbike"
 
@@ -33,7 +33,7 @@ function vehicleType( color, type ) {
 }
 console.log(vehicleType("blue", 2));
 
-vehicleType(" blue " , "1");
+
 vehicleType(" blue " , "2");
 
  //output "a  blue  motorbike" */

@@ -2,5 +2,5 @@
 let vehicles = ["motorbike" , "caravan" , "bike" , "citycar" , "4x4"];
 console.log(vehicles); */
 
-vehicles[2]    //bike
+console.log(vehicles[2]);    //bike
 

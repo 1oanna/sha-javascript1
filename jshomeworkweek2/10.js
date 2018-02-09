@@ -4,7 +4,7 @@ without changing the code for question 9? */
 
 let phrase = "Amazing Joe's Garage, we service, ";
 let ar = [" cars " , " motorbikes " , " caravans " , " bikes "];
-ar = ar.push(" 4X4 ");
+ar.push(" 4X4 ");
 
 
 

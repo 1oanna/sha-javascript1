@@ -19,13 +19,7 @@ function vehicle(color, age, type) {
 console.log(vehicle(" green ", 3, 1));
 
 
-	vehicle(" green " , 1 , 1);
-	vehicle(" green " , 1 , 2);
-	vehicle(" green " , 1 , 3);
-	vehicle(" green " , 2 , 1);
-	vehicle(" green " , 2 , 2);
-	vehicle(" green " , 2 , 3);
+	
 	vehicle(" green " , 3 , 1);
-	vehicle(" green " , 3 , 2);
-	vehicle(" green " , 3 , 3);
+	
 
