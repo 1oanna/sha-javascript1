@@ -1,0 +1,48 @@
+html, body {
+	font-family: 'Arial', 'Helvetica', sans;
+	background-color: #8a0651;
+}
+
+
+#container {
+	max-width: 75rem;
+	margin: 3rem auto 0;
+
+}
+
+.h1Tag {
+	color: #00beff;
+	padding: 1rem;
+	text-align: center;
+	margin:10; padding:10;
+} 
+
+
+.books {
+	display: flex;
+	flex-flow: row wrap;
+
+}
+
+.books .book { 
+		list-style: none; 
+		text-align: center;
+		color: #2ec1f2;
+		margin-bottom: 1rem;
+		margin-left: 2rem;
+		border: 1px solid #2ec1f2;
+		border-radius: 4px;
+		padding: 0.75rem;
+		width: 20%;
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+
+	}
+
+.books .book .cover {
+			margin-bottom: 1rem;
+			max-width: 100%;
+			max-height: 100%;
+
+		}

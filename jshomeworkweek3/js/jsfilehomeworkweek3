@@ -1,0 +1,159 @@
+(function() {
+    // Write all code here and it will run on start up
+
+const listOfAllBooks = ["id_book_one","id_book_two","id_book_three","id_book_four","id_book_five","id_book_six","id_book_seven","id_book_eight","id_book_nine","id_book_ten","id_book_eleven","id_book_twelve"];
+
+const information = {
+    "id_book_one": {
+        author: "Josef Albers",
+        language: "english",
+        name: "Interaction of color",
+        altText: "This is the cover of the book called Interaction of color 50th Anniversary Edition by Josef Albers"
+    },
+    "id_book_two": {
+        author: "Ernest Norling",
+        language: "english",
+        name: "Perspective",
+        altText: "This is the cover of the book called Perspective Made Easy written by Ernest Norling"
+    },
+    "id_book_three": {
+        author: "Susanne Deicher",
+        language: "english",
+        name: "Mondrian",
+        altText: "This is the cover of the book called Mondrian written by Susanne Deicher"
+    },
+    "id_book_four": {
+        author: "Helmut Newton",
+        language: "english",
+        name: "Helmut Newton",
+        altText: "This is the cover of the book called Helmut Newton with photos by Helmut Newton"
+    },
+    "id_book_five": {
+        author: "Helmut Newton",
+        language: "english",
+        name: "Private Property",
+        altText: "This is the cover of the book called Helmut Newton private property with photos by Helmut Newton"
+    },
+    "id_book_six": {
+        author: "Frances Morris",
+        language: "english",
+        name: "Yayoi Kusama",
+        altText: "This is the cover of the book of Frances Morris called Yayoi Kusama with photos of the work of the artist Yayoi Kusama"
+    },
+    "id_book_seven": {
+        author: "Verlag Der",
+        language: "english",
+        name: "Yayoi Kusama",
+        altText: "This is the cover of the book of Verlag Der called Yayoi Kusama with photos of the work of the artist Yayoi Kusama"
+    },
+    "id_book_eight": {
+        author: "Dan Brown",
+        language: "english",
+        name: "Illuminati",
+        altText: "This is the cover of the book called Illuminati written by Dan Brown"
+
+    },
+    "id_book_nine": {
+        author: "Stieg Larsson",
+        language: "english",
+        name: "Girl played with fire",
+        altText: "This is the cover of the book called The girl who played with fire written by Stieg Larsson"
+
+    },
+    "id_book_ten": {
+        author: "Robert Thompson",
+        language: "english",
+        name: "Macro Photography",
+        altText: "This is the cover of the book called close up and macro photography written by Robert Thompson"
+
+    },
+    "id_book_eleven": {
+        author: "Christian Wassmann",
+        language: "english",
+        name: "Cosmic architects",
+        altText: "This is the cover of the book called sun path house and other cosmic architectures by Christian Wassmann"
+
+    },
+    "id_book_twelve": {
+        author: "Marcel Breuer",
+        language: "english",
+        name: "Global Institutions",
+        altText: "This is the cover of the book called building global institutions by Marcel Breuer"
+
+    }
+}
+
+const image = {
+    "id_book_one": "./images/Josef_Albers_Interaction_of_color.jpg",
+    "id_book_two": "./images/Perspective.jpg",
+    "id_book_three": "./images/Mond.jpg",
+    "id_book_four": "./images/HelmutNewton.jpg",
+    "id_book_five": "./images/Helmut_Newton_Private.jpg",
+    "id_book_six": "./images/YayoiKusama1.jpg",
+    "id_book_seven": "./images/YayoiKusama2.jpg",
+    "id_book_eight": "./images/Illumin.jpg",
+    "id_book_nine": "./images/The_girl_who_played.jpg",
+    "id_book_ten": "./images/Close-up_and_Macro_Photography.jpg",
+    "id_book_eleven": "./images/christian-wassmann-sun-path-house-and-other-cosmic-architectures.jpg",
+    "id_book_twelve": "./images/marcel-breuer-building-global-institutions.jpg", 
+};
+
+
+
+    // Get the <div> tag from the HTML page
+    let div = document.getElementById("container");
+
+    // Create a div tag and give it a className
+    let h1Tag = document.createElement("h1");
+    h1Tag.innerHTML = "My Favourite Books"
+	div.appendChild(h1Tag);
+	h1Tag.className = "h1Tag";
+
+
+    // Create a div tag and give it a className
+    let divTag = document.createElement("div");
+    divTag.className = "myBooks";
+
+
+    // Create a ul tag and give it a className
+    let ultag = document.createElement("ul");
+    ultag.className = "books";
+	
+
+    // For Each element in this array, create a li tag and add it
+    // to the ulTag
+    listOfAllBooks.forEach(function(id) {
+    	let img = document.createElement("img");
+        img.alt = information[id].altText;
+    	img.src = image[id];
+    	img.className = "cover";
+
+    	
+
+        let liTag = document.createElement("li");
+        liTag.innerHTML = information[id].author; // before =id; targeted id, I changed it to target author
+        liTag.className = "book";
+
+		// create an h2 for titles 
+    	let title = document.createElement("h2");
+		title.innerHTML = information[id].name;
+        title.className = "title"; 
+        liTag.appendChild(title); 
+
+        
+
+        liTag.appendChild(img);
+       	ultag.appendChild(liTag);
+       	
+		
+})
+
+    div.appendChild(divTag);
+    divTag.appendChild(ultag);
+
+})();
+
+
+
+
+
