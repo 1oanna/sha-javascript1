@@ -1,6 +1,6 @@
 html, body {
 	font-family: 'Arial', 'Helvetica', sans;
-	background-color: #8a0651;
+	background-color: #0087ca;
 }
 
 
@@ -11,7 +11,7 @@ html, body {
 }
 
 .h1Tag {
-	color: #00beff;
+	color: #DCF0F7;
 	padding: 1rem;
 	text-align: center;
 	margin:10; padding:10;
@@ -27,7 +27,7 @@ html, body {
 .books .book { 
 		list-style: none; 
 		text-align: center;
-		color: #2ec1f2;
+		color: #DCF0F7;
 		margin-bottom: 1rem;
 		margin-left: 2rem;
 		border: 1px solid #2ec1f2;
